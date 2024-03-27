@@ -1,0 +1,29 @@
+.header-container {
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.social-icons-to-connet-me {
+  gap: 1.5rem;
+}
+
+.contact-me p {
+  font-weight: 600;
+}
+
+.social-icons .icons {
+  gap: 10px;
+}
+
+.icons i {
+    background: var(--primaryColor);
+    color: var(--secondaryColor);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 0.9rem;
+}

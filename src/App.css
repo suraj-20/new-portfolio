@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primaryColor: rgb(17 1 27 / 97%);
+  --secondaryColor: rgb(2 180 96 / 87%);
+  --btnColor: #0da3a1;
+  --hoverColor: #148f77;
+  --headingTextColor: #1a232b;
+  --peragraphTextColor: #3a424a;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --stepSectionBgColor: #f5f7f9;
+  --footerBgColor: #1a2633;
+  --bgColor: #468fd9;
+
+  /* Font Sizes */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
+  color: var(--whiteColor);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  color: var(--whiteColor);
+}
+
+p {
+  color: var(--peragraphTextColor);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.grid {
+  display: grid;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.primary-btn {
+  background: var(--secondaryColor);
+  color: var(--primaryColor);
+  border: none;
+  outline: none;
+  padding: 30px 60px;
+}
+
+.secondary-btn {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  border: 2px solid var(--secondaryColor);
+  padding: 15px 60px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
 }
