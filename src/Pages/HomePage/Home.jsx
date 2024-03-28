@@ -11,6 +11,9 @@ const Home = () => {
       </section>
       <section className="about-section">
         <About />
+        <div className="green-line">
+          <div className="line"></div>
+        </div>
       </section>
     </div>
   );
