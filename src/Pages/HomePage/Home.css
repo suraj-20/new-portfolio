@@ -1,19 +1,22 @@
-.hero-section, .about-section, .recent-project-section  {
-    width: 100%;
-    height: 100vh;
+.hero-section,
+.about-section,
+.recent-project-section,
+.skill-section {
+  width: 100%;
+  height: 100vh;
 }
 
 .education-section {
-    width: 100%;
-    height: 70vh;
+  width: 100%;
+  height: 70vh;
 }
 
-@media(max-width:1000px) {
-    .about-section {
-        height: unset;
-    }
+@media (max-width: 1000px) {
+  .about-section {
+    height: unset;
+  }
 
-    .recent-project-section {
-        height: auto;
-    }
+  .recent-project-section {
+    height: auto;
+  }
 }

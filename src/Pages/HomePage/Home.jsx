@@ -4,6 +4,7 @@ import Hero from "../../Components/HERO_SECTION/Hero";
 import About from "../../Components/ABOUT_SECTION/About";
 import RecentProjects from "../../Components/RECENTPROJECT_SECTION/RecentProjects";
 import MyEducation from "../../Components/EDUCATION_SECTION/MyEducation";
+import Skills from "../../Components/SKILLS_SECTION/Skills";
 
 const Home = () => {
   return (
@@ -25,6 +26,9 @@ const Home = () => {
       </section>
       <section className="education-section">
         <MyEducation />
+      </section>
+      <section className="skill-section">
+        <Skills />
       </section>
     </div>
   );
