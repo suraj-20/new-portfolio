@@ -1,0 +1,11 @@
+.blog-page {
+    width: 100%;
+    height: 100vh;
+    background: var(--primaryColor);
+}
+
+.blog-line {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

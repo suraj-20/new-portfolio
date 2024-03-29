@@ -13,7 +13,7 @@ const Home = () => {
       <section className="hero-section">
         <Hero />
       </section>
-      <section className="about-section">
+      <section id="about" className="about-section">
         <About />
         <div className="green-line">
           <div className="line"></div>

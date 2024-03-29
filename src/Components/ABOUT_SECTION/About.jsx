@@ -29,8 +29,14 @@ const About = () => {
             <Link to={""}>
               <button className="hire-me-btn primary-btn">Hire Me</button>
             </Link>
-            <Link to={""}>
-              <button className="download-btn secondary-btn">Download CV</button>
+            <Link
+              to={
+                "https://drive.google.com/file/d/1DX1LHXKFGjqCt4UcmeNl8wxw3y1i1f3i/view?usp=drive_link"
+              }
+            >
+              <button className="download-btn secondary-btn">
+                Download CV
+              </button>
             </Link>
           </div>
         </div>

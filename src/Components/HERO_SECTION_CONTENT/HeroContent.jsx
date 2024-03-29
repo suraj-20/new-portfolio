@@ -1,7 +1,7 @@
 import React from "react";
 import "./HeroContent.css";
 import { Link } from "react-router-dom";
-import img1 from "../../Assets/Images/suraj passport image.jpg"
+import img1 from "../../Assets/Images/suraj passport image.jpg";
 
 const HeroContent = () => {
   return (
@@ -14,9 +14,14 @@ const HeroContent = () => {
             I'm a Web <span>Developer</span>.
           </h2>
         </div>
-        <Link to={"#about"} className="anchor">
+        <Link
+          to={
+            "https://drive.google.com/file/d/1DX1LHXKFGjqCt4UcmeNl8wxw3y1i1f3i/view?usp=drive_link"
+          }
+          className="anchor"
+        >
           <button className="aboutBtn secondary-btn">
-            About <i class="fa-solid fa-arrow-right"></i>
+            Download CV <i class="fa-solid fa-arrow-down"></i>
           </button>
         </Link>
       </div>
