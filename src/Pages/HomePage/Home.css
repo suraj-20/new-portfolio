@@ -11,6 +11,11 @@
   height: 70vh;
 }
 
+.contact-section {
+  width: 100%;
+  height: 100vh;
+}
+
 @media (max-width: 1000px) {
   .about-section {
     height: unset;
@@ -18,5 +23,13 @@
 
   .recent-project-section {
     height: auto;
+  }
+
+  .skill-section {
+    height: unset;
+  }
+
+  .contact-section {
+    height: unset;
   }
 }
