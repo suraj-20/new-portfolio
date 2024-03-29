@@ -67,6 +67,9 @@ const RecentProjects = () => {
             );
           })}
         </div>
+        <Link to={"/projects"} className="project-btn">
+          <button className="secondary-btn" >More Projects</button>
+        </Link>
       </div>
       <div className="project-section-dot dots">
         <img src={pngwing} alt="" />

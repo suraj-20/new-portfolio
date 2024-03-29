@@ -80,6 +80,11 @@ ul {
   transition: 0.3s ease-out;
 }
 
+.primary-btn:hover {
+  box-shadow: 10px 10px;
+  color: red;
+}
+
 .secondary-btn {
   background: var(--primaryColor);
   color: var(--whiteColor);
@@ -87,6 +92,11 @@ ul {
   padding: 15px 60px;
   font-weight: 500;
   transition: 0.3s ease-out;
+}
+
+.secondary-btn:hover {
+  box-shadow: 10px 10px;
+  color: red;
 }
 
 .icon {
