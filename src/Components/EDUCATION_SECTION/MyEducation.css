@@ -1,0 +1,41 @@
+.education-container {
+    width: 100%;
+    height: 100%;
+}
+
+.education-section-content {
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 3rem;
+}
+
+.education-cards {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.education-institue-name h2 {
+    font-weight: 600;
+}
+
+.education-institue-name span {
+    font-weight: 200;
+}
+
+.institue-name-or-year {
+    display: flex;
+    gap: 1rem;
+}
+
+.institue-name-or-year p {
+    /* color: var(--secondaryColor); */
+    font-weight: 600;
+}
+
+.institue-name-or-year span {
+    color: gray;
+}
