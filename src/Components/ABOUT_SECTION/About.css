@@ -66,8 +66,8 @@
   right: -80%;
 }
 
-.green-line .line {
-  border: 4px solid var(--secondaryColor);
+.line {
+  border: 3px solid var(--secondaryColor);
   height: 100%;
 }
 

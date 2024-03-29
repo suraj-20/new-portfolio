@@ -1,0 +1,78 @@
+import React from "react";
+import "./RecentProjects.css";
+import img from "../../Assets/Images/Screenshot 2024-02-27 165642.png";
+import img2 from "../../Assets/Images/todoapp ss.png";
+import img3 from "../../Assets/Images/wowfare.png";
+import pngwing from "../../Assets/Images/pngwing.com (1).png";
+import { Link } from "react-router-dom";
+
+const cardObj = [
+  {
+    id: 1,
+    project_name: "Shopify",
+    project_image: img,
+    project_link: "https://shopify-28.netlify.app/",
+    project_git_link: "https://github.com/suraj-20/frontend",
+  },
+  {
+    id: 2,
+    project_name: "Todos",
+    project_image: img2,
+    project_link: "https://todos-28.netlify.app/login",
+    project_git_link: "https://github.com/suraj-20/todo-frontend",
+  },
+  {
+    id: 3,
+    project_name: "wowfare",
+    project_image: img3,
+    project_link: "https://client-puce-ten.vercel.app/",
+    project_git_link: "https://github.com/suraj-20/client",
+  },
+];
+
+const RecentProjects = () => {
+  return (
+    <div className="recent-project-container">
+      {/* <div className="project-background-image"></div> */}
+      <div className="project-section-content container flex">
+        <div className="project-heading">
+          <h1 className="heading">Recent Projects</h1>
+        </div>
+        <div className="project-cards">
+          {cardObj.map((card, i) => {
+            return (
+              <div key={card.id} className="card-container card">
+                <Link
+                  to={card.project_link}
+                  target="_black"
+                  className="project-image"
+                >
+                  <img src={card.project_image} alt="" />
+                </Link>
+                <div className="card-contents">
+                  <div className="project-name">
+                    <h2 className="">{card.project_name}</h2>
+                    <p className="pera">Portfolio 2024.</p>
+                  </div>
+                  <div className="project-link">
+                    <Link target="_black" to={card.project_git_link}>
+                      <i class="fa-solid fa-code"></i>
+                    </Link>
+                    <Link target="_black" to={card.project_link}>
+                      <i class="fa-solid fa-link"></i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="project-section-dot dots">
+        <img src={pngwing} alt="" />
+      </div>
+    </div>
+  );
+};
+
+export default RecentProjects;

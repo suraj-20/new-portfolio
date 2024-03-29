@@ -1,0 +1,123 @@
+.recent-project-container {
+  width: 100%;
+  height: 100%;
+  background: var(--primaryColor);
+}
+
+.project-section-content {
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 3rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.card-container:hover {
+  box-shadow: 10px 10px;
+  color: var(--secondaryColor);
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid var(--secondaryColor);
+  border-radius: 5px;
+}
+
+.project-cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-contents .project-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-contents .project-link {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primaryColor);
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  transition: 0.3s ease-out;
+}
+
+.project-link a:hover {
+  background: var(--secondaryColor);
+  color: red;
+  transition: 0.3s ease-in;
+}
+
+.card-contents h2 {
+  line-height: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card-contents p {
+  color: var(--secondaryColor);
+  font-weight: 600;
+}
+
+.recent-green-line {
+  width: 60%;
+  position: relative;
+  top: -72%;
+  right: -40%;
+}
+
+.project-section-dot {
+    width: 25%;
+    bottom: 95%;
+    left: 70%;
+}
+
+@media (min-width:1000px) and (max-width:1250px) {
+    .project-section-content {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .project-section-content {
+        padding: 4rem 0;
+    }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .recent-green-line {
+    display: none;
+  }
+}
