@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./MyEducation.css";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const MyEducation = () => {
+  useEffect(() => {
+    Aos.init({duration:2000})
+  })
   return (
     <div className="education-container">
-      <div className="education-section-content container flex">
+      <div data-aos="fade-up" className="education-section-content container flex">
         <div className="education-heading">
           <h1>Education.</h1>
         </div>

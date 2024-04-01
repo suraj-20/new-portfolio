@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./RecentProjects.css";
 import img from "../../Assets/Images/Screenshot 2024-02-27 165642.png";
 import img2 from "../../Assets/Images/todoapp ss.png";
 import img3 from "../../Assets/Images/wowfare.png";
 import pngwing from "../../Assets/Images/pngwing.com (1).png";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const cardObj = [
   {
@@ -31,17 +33,33 @@ const cardObj = [
 ];
 
 const RecentProjects = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  });
   return (
     <div className="recent-project-container">
       {/* <div className="project-background-image"></div> */}
       <div className="project-section-content container flex">
         <div className="project-heading">
-          <h1 className="heading">Recent Projects</h1>
+          <h1 data-aos="fade-up" className="heading">
+            Recent Projects
+          </h1>
         </div>
         <div className="project-cards">
           {cardObj.map((card, i) => {
             return (
-              <div key={card.id} className="card-container card">
+              <div
+                data-aos="fade-right"
+                key={card.id}
+                className="card-container card"
+              >
                 <Link
                   to={card.project_link}
                   target="_black"
@@ -67,8 +85,10 @@ const RecentProjects = () => {
             );
           })}
         </div>
-        <Link to={"/projects"} className="project-btn">
-          <button className="secondary-btn" >More Projects</button>
+        <Link data-aos="fade-right" to={"/projects"} className="project-btn">
+          <button onClick={handleScrollToTop} className="secondary-btn">
+            More Projects
+          </button>
         </Link>
       </div>
       <div className="project-section-dot dots">

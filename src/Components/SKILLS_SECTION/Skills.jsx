@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Skills.css";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const skillObj = [
   {
@@ -50,6 +52,9 @@ const skillObj = [
 ];
 
 const Skills = () => {
+  useEffect(() => {
+    Aos.init({duration:2000})
+  })
   const colors = [
     "rgba(0, 162, 255, 0.79)",
     "yellow",
@@ -64,13 +69,13 @@ const Skills = () => {
   return (
     <div className="skills-container">
       <div className="skill-section-content container flex">
-        <div className="skill-heading">
+        <div data-aos="fade-up" className="skill-heading">
           <h1 className="heading">Skills & Abilites.</h1>
         </div>
         <div className="skill-social-icons">
           {skillObj.map((skill, i) => {
             return (
-              <div key={skill.id} className="social-icon-card">
+              <div data-aos="fade-right" key={skill.id} className="social-icon-card">
                 <div
                   className="social-icon"
                   style={{ color: colors[i % colors.length] }}

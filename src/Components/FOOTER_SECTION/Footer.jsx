@@ -1,32 +1,55 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
+  const handleEmailClick = () => {
+    window.location.href = "mailto:suraaj0015@gmail.com";
+  };
+
+  const handleCallClick = () => {
+    window.location.href = "tel:+9182871-46841";
+  };
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  });
+
   return (
     <div className="footer-section">
       <div className="footer-container container flex">
         <div className="footer-contents flex">
-          <div className="footer-content footer-left-content">
+          <div
+            data-aos="fade-up"
+            className="footer-content footer-left-content"
+          >
             <h2 className="heading">Suraj Portfolio</h2>
             <p>
               Thank you for visiting my personal portfolio website. Connect with
               me over socials.
             </p>
           </div>
-          <div className="footer-content footer-right-content">
+          <div
+            data-aos="fade-up"
+            className="footer-content footer-right-content"
+          >
             <h2 className="heading">Contact Details</h2>
             <div className="contact-details flex">
-              <p>
-                <span>Phone: </span>{" "}
-                <Link to={""}>+91 82871-46841 </Link>
+              <p onClick={handleCallClick}>
+                <span>Phone: </span> <Link to={""}>+91 82871-46841 </Link>
               </p>
               <p>
                 <span>Email: </span>{" "}
-                <Link
-                  to={"https://mail.google.com/mail/u/0/#inbox?compose=new"}
-                  target="_blank"
-                >
+                <Link onClick={handleEmailClick} target="_blank">
                   suraaj0015@gmail.com{" "}
                 </Link>
               </p>
@@ -43,19 +66,23 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="footer-content footer-mid-content">
+          <div data-aos="fade-up" className="footer-content footer-mid-content">
             <h2 className="heading">Quick Links</h2>
             <div className="links">
               <ul className="flex">
-                <Link to="#about">
+                <Link onClick={handleScrollToTop} to={"/"}>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  <li>Home</li>
+                </Link>
+                <Link onClick={handleScrollToTop} to="#about">
                   <i class="fa-solid fa-circle-chevron-right"></i>
                   <li>About</li>
                 </Link>
-                <Link to={"/projects"}>
+                <Link onClick={handleScrollToTop} to={"/projects"}>
                   <i class="fa-solid fa-circle-chevron-right"></i>
                   <li>Projects</li>
                 </Link>
-                <Link to={"/blogs"}>
+                <Link onClick={handleScrollToTop} to={"/blogs"}>
                   <i class="fa-solid fa-circle-chevron-right"></i>
                   <li>Blogs</li>
                 </Link>
@@ -63,7 +90,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr />
+        <hr data-aos="fade-up" />
         <div className="copy-right">
           <p>
             Designed with ❤️ by{" "}

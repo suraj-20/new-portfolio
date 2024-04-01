@@ -3,6 +3,9 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const handleEmailClick = () => {
+    window.location.href = "mailto:suraaj0015@gmail.com?subject=Subject%20Here&body=Body%20Here"
+  }
   return (
     <div className="header-container flex">
       <div className="logo">
@@ -17,11 +20,9 @@ const Header = () => {
         <div className="social-icons">
           <div className="icons flex">
             <Link
-              to={
-                "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKjRLLvQzZsJpgWbDRsjMMmsCVrlmRpdpXdLkrRrtbmSdDZLTHLNhBLcrFrDKsjPsPDlMpm"
-              }
+              onClick={handleEmailClick}
             >
-              <i class="fa-solid fa-envelope"></i>
+              <i  class="fa-solid fa-envelope"></i>
             </Link>
             <Link to={"https://github.com/suraj-20"}>
               {" "}

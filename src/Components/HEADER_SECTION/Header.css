@@ -33,3 +33,13 @@
   color: red;
   transition: .3s ease-in-out;
 }
+
+@media(max-width:420px) {
+  .logo a .heading {
+    font-size: 1.3rem;
+  }
+
+  .social-icons-to-connet-me {
+    gap: 0.8rem;
+  }
+}
