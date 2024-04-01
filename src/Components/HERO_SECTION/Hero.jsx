@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Hero.css";
 import Header from "../HEADER_SECTION/Header";
 import HeroContent from "../HERO_SECTION_CONTENT/HeroContent";

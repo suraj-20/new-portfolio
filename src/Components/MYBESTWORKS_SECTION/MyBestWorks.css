@@ -1,8 +1,15 @@
+.mybest-work-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .projects-section-content {
-    height: 85vh;
+    /* height: 85vh; */
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    gap: 1.5rem;
 }
 
 .project-section-bg {
@@ -18,3 +25,16 @@
     width: 100%;
     height: 100%;
 }
+
+@media(max-width:1000px) {
+    .myBest-work-card {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:600px) {
+    .myBest-work-card {
+        grid-template-columns: 1fr;
+    }
+}
+

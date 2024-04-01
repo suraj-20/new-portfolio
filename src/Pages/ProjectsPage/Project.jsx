@@ -7,9 +7,6 @@ const Project = () => {
     <div className="project-page">
       <section className="project-section">
         <MyBestWorks />
-        <div className="blog-line vertical-line">
-          <div className="line"></div>
-        </div>
       </section>
     </div>
   );
