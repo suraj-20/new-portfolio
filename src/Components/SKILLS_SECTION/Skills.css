@@ -1,6 +1,6 @@
 .skills-container {
   height: 100%;
-  background: var(--primaryColor);
+  /* background: var(--primaryColor); */
 }
 
 .skill-section-content {
@@ -9,6 +9,10 @@
   align-items: start;
   justify-content: center;
   gap: 3rem;
+}
+
+.skill-heading h1 {
+  color: #000;
 }
 
 .skill-social-icons {

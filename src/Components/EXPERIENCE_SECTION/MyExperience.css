@@ -1,0 +1,41 @@
+.experience-container {
+  width: 100%;
+  height: 100%;
+}
+
+.experience-section-content {
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 3rem;
+}
+
+.experience-cards {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.experience-name h2 {
+  font-weight: 600;
+}
+
+.experience-name span {
+  font-weight: 200;
+}
+
+.work-duration {
+  display: flex;
+  gap: 1rem;
+}
+
+.work-duration p {
+  /* color: var(--secondaryColor); */
+  font-weight: 600;
+}
+
+.work-duration span {
+  color: gray;
+}

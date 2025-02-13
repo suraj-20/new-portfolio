@@ -30,11 +30,11 @@ const About = () => {
           </div>
           <div className="about-me-pera">
             <p>
-              I am pursuing my bachelor's degree from Starex University and a
-              professional web developer with six months of experience in web
-              development with a proficient consistency in node.js and react JS.
-              Strong creative and analytical skills. Let's connect and
-              collaborate!
+              Passionate and dedicated Web Developer with a strong foundation in building responsive, user-friendly
+              websites and dashboards. Skilled in solving <strong> Data Structures and Algorithms (DSA)</strong> problems, with over
+              <strong> 200+ solutions on GeeksforGeeks (GFG)</strong> and <strong>100+ solutions on LeetCode</strong>. Actively seeking
+              opportunities to contribute technical expertise, drive innovation, and deliver impactful web solutions. Proven
+              ability to adapt and excel in challenging environments, with a continuous focus on learning and growth.
             </p>
           </div>
           <div className="contact-details flex">
@@ -71,7 +71,7 @@ const About = () => {
             </Link>
             <Link
               to={
-                "https://drive.google.com/file/d/1DX1LHXKFGjqCt4UcmeNl8wxw3y1i1f3i/view?usp=drive_link"
+                "https://drive.google.com/file/d/1bQcxkoZ964qdyfJdeKWqhWopAydU05n9/view?usp=sharing"
               }
             >
               <button className="download-btn secondary-btn">

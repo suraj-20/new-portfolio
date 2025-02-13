@@ -62,7 +62,7 @@ const HeroContent = () => {
         </div>
         <Link
           to={
-            "https://drive.google.com/file/d/1DX1LHXKFGjqCt4UcmeNl8wxw3y1i1f3i/view?usp=drive_link"
+            "https://drive.google.com/file/d/1bQcxkoZ964qdyfJdeKWqhWopAydU05n9/view?usp=sharing"
           }
           className="anchor"
         >

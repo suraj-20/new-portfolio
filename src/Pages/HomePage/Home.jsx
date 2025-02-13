@@ -6,6 +6,7 @@ import RecentProjects from "../../Components/RECENTPROJECT_SECTION/RecentProject
 import MyEducation from "../../Components/EDUCATION_SECTION/MyEducation";
 import Skills from "../../Components/SKILLS_SECTION/Skills";
 import Contact from "../../Components/CONTACTDETAILS_SECTION/Contact";
+import MyExperience from "../../Components/EXPERIENCE_SECTION/MyExperience";
 
 const Home = () => {
   return (
@@ -24,6 +25,9 @@ const Home = () => {
         <div className="recent-green-line">
           <div className="line"></div>
         </div>
+      </section>
+      <section className="experience-section">
+        <MyExperience />
       </section>
       <section className="education-section">
         <MyEducation />

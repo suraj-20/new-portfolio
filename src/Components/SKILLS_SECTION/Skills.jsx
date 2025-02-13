@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Skills.css";
+import image from "../../Assets/Images/Postman.svg"
 import Aos from "aos";
 import "aos/dist/aos.css"
 
@@ -49,11 +50,16 @@ const skillObj = [
     skill_name: "Github",
     skill_icon: <i class="fa-brands fa-github"></i>,
   },
+  {
+    id: 10,
+    skill_name: "Postman",
+    skill_image: image,
+  },
 ];
 
 const Skills = () => {
   useEffect(() => {
-    Aos.init({duration:2000})
+    Aos.init({ duration: 2000 })
   })
   const colors = [
     "rgba(0, 162, 255, 0.79)",
@@ -70,7 +76,7 @@ const Skills = () => {
     <div className="skills-container">
       <div className="skill-section-content container flex">
         <div data-aos="fade-up" className="skill-heading">
-          <h1 className="heading">Skills & Abilites.</h1>
+          <h1>Skills & Abilites.</h1>
         </div>
         <div className="skill-social-icons">
           {skillObj.map((skill, i) => {
@@ -80,7 +86,11 @@ const Skills = () => {
                   className="social-icon"
                   style={{ color: colors[i % colors.length] }}
                 >
-                  {skill.skill_icon}
+                  {skill.skill_icon ? (
+                    skill.skill_icon
+                  ) : skill.skill_image ? (
+                    <img src={skill.skill_image} alt={skill.skill_name} style={{ width: "80px", height: "80px" }} />
+                  ) : null}
                 </div>
                 <h3 className="heading">{skill.skill_name}</h3>
               </div>
