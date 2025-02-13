@@ -39,3 +39,9 @@
 .work-duration span {
   color: gray;
 }
+
+@media (max-width: 1000px) {
+  .experience-section-content {
+    padding: 3rem 0;
+  }
+}
