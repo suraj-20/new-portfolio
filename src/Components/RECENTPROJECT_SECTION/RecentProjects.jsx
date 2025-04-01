@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 const cardObj = [
   {
     id: 1,
-    project_name: "Char App",
+    project_name: "Chat App",
     project_image: img2,
     project_link: "https://chat-app-vert-eta.vercel.app/login",
     project_git_link: "https://github.com/suraj-20/Chat-App",
